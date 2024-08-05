@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <title>Mnist App</title>
+    </head>
+    <body>
+        <div id="app">
+            <!-- <form action="http://127.0.0.1:8000/upload/" method="post">
+                <input type="file" id="fileInput" />
+                <button type="button" id="btn">Submit</button>
+            </form> -->
+
+            <div id="canvas_div" style="overflow-x: auto">
+                <canvas id="canvas" width="300" height="300"></canvas>
+                <br />
+                <button id="clrBtn">Clear Area</button>
+            </div>
+            <div id="result"></div>
+        </div>
+        <!-- <br> -->
+        <script type="module" src="/main.js"></script>
+        <script type="module" src="/canvas.js"></script>
+    </body>
+</html>
