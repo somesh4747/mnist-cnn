@@ -1,4 +1,5 @@
 import './style.css'
+import './index.css'
 
 const htmlBody = document.querySelector('#app')
 
@@ -19,7 +20,7 @@ export async function uploadImage() {
     if (true) {
         formData.append('file', file)
 
-        const result = fetch('https://mnist-fastapi.onrender.com/upload', {
+        const result = fetch('http://13.200.34.244:8000/upload', {
             method: 'POST',
             body: formData,
         })

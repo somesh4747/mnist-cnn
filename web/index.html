@@ -27,19 +27,22 @@
     </head>
     <body>
         <div id="app">
+            <h1 class="text-5xl m-4">Digit Detection using Tensorflow</h1>
             <!-- <form action="http://127.0.0.1:8000/upload/" method="post">
                 <input type="file" id="fileInput" />
                 <button type="button" id="btn">Submit</button>
             </form> -->
 
-            <div id="canvas_div" style="overflow-x: auto">
+            <div id="canvas_div" class="flex justify-center items-center">
                 <canvas id="canvas" width="300" height="300"></canvas>
                 <br />
-                <button id="clrBtn">Clear Area</button>
             </div>
+            <button id="clrBtn" class="px-4 py-2 m-4 border border-sky-900">
+                Clear Area
+            </button>
             <div id="result"></div>
         </div>
-        <!-- <br> -->
+
         <script type="module" src="/main.js"></script>
         <script type="module" src="/canvas.js"></script>
     </body>
