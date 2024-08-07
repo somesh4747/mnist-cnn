@@ -1,7 +1,14 @@
 import './style.css'
 import './index.css'
 
+
+
+
 const htmlBody = document.querySelector('#app')
+
+const server = import.meta.env.VITE_BACKEND_URL
+// console.log(import.meta.env.VITE_BACKEND_URL);
+
 
 export async function uploadImage() {
     // const fileInput = document.getElementById('fileInput')
@@ -20,7 +27,7 @@ export async function uploadImage() {
     if (true) {
         formData.append('file', file)
 
-        const result = fetch('http://13.200.34.244:8000/upload', {
+        const result = fetch(`${server}/upload`, {
             method: 'POST',
             body: formData,
         })
